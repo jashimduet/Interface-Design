@@ -1,0 +1,197 @@
+@import "_vars";
+  /*................Header start...................*/
+  
+@media only screen and (min-width: 1800px) {
+  
+  .myNav li {float: right;}
+
+  #articleByDate{
+  float: right; 
+  text-align:center; 
+  margin-right: 40%;
+  }
+
+  .flex-container{
+
+   img{
+    margin-top: 4px;
+    margin-bottom: 5px;
+    width: 450px;
+    height: 350px;
+  }
+}
+  
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .myNav li {float: right;}
+  #articleByDate{
+  float: right; 
+  text-align:center; 
+  margin-right: 25%;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .myNav li {float: right;}
+  
+  #articleByDate{
+  float: right; 
+  text-align:center; 
+  margin-right: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .myNav li {float: right;}
+  #articleByDate{
+  float: right; 
+  text-align:center; 
+  margin-right: 20%;
+  }
+  
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+  
+  .myNav li {float: none;}
+
+  #articleByDate{
+    float: right;
+    width: 100%;
+
+   }
+#Period{
+    margin-left: auto;
+   }
+  
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  
+  .myNav li {float: none;}
+
+  #articleByDate{
+    width: 100%;
+    margin: auto;
+    }
+  
+  #Period{
+    margin-left: 6%;
+   }
+  
+}
+
+/*................Header End..................*/
+
+  /* Image properties with annimation start  */
+
+  .banner {
+  	position: absolute;
+  	width: $fullWidth;
+  	height: 300px; 
+  	float: center;
+  	-webkit-animation: mm 12s infinite; 
+  	animation: mm 12s infinite;
+  	opacity: 1;
+
+  }
+  /*  image Animation Properties start */
+
+  @-webkit-keyframes mm {
+
+  	0% {
+  		opacity:1;
+  	}
+  	17% {
+  		opacity:1;
+  	}
+  	25% {
+  		opacity:0;
+  	}
+  	92% {
+  		opacity:0;
+  	}
+  	100% {
+  		opacity:1;
+  	}
+	
+}
+
+img:nth-child(1){ -webkit-animation-delay:9s } 
+img:nth-child(2){ -webkit-animation-delay:6s } 
+img:nth-child(3){ -webkit-animation-delay:3s } 
+img:nth-child(4){ -webkit-animation-delay:0}
+
+/*img:nth-child(1){ -webkit-animation-delay:14s }*/ 
+
+
+@keyframes mm {
+
+	0% {
+		opacity:1;
+	}
+	17% {
+		opacity:1;
+	}
+	25% {
+		opacity:0;
+	}
+	92% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+  
+}
+
+
+img:nth-child(1){ animation-delay:9s } 
+img:nth-child(2){ animation-delay:6s } 
+img:nth-child(3){ animation-delay:3s } 
+img:nth-child(4){ animation-delay:0}
+
+
+.logo{
+  height: 50px;
+  &:hover {
+  transform: rotate(15deg); 
+  }
+}
+
+// ...modal event image hover......
+#modalEventHere img:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,445 @@
+@import "_vars";
+
+
+@mixin body{ 
+  	height:$Fullviewportheight;
+  	width:$Fullviewportwidth;
+  	background-color:$cottonSeed;
+      }
+ @mixin  myNav{
+
+  	list-style-type: none;
+  	margin: $initialmargin;
+  	padding:$initialPadding;
+  	overflow: hidden;
+  	background-color:$MineShaft;
+		  	li {
+		  		float: right;
+		  		a {
+				  	display: block;
+				  	color: $white;
+				  	text-align: center;
+				  	padding: 14px 16px;
+				  	text-decoration: none;
+				  	    &:hover{
+                          background-color: green;
+						}
+				  }
+
+		  	  }
+       }
+
+   @mixin SiteTitle{
+     color: $white;
+     margin-left: 10%;
+     font-size:25px; 
+     font-weight: bold; 
+     font-style: italic; 
+     margin-top: 5%;
+	     &:hover{
+	     	
+	      transform: scale(1.3); 
+	       }
+       }
+
+
+
+@mixin con {
+  	width: $fullWidth;
+  	height: 300px;
+  	border: 1px solid gray;
+  	margin: auto;
+  	position:relative;
+  }
+
+@mixin divider{
+	width: $fullWidth; 
+	background-color: $dividerColor;
+	border: 2px solid teal;
+	height: auto;
+}
+
+@mixin iputDivider{
+	display: block;
+	width: auto;
+	height: 50px;
+	padding: 0px 10px;
+	border-radius: 4px;
+	border: 1px #ccc solid;
+	margin: 0px 0px 16px 0px;
+}
+
+ @mixin articleByDate{
+	float: right; 
+	text-align:center; 
+	margin-right: 20%;
+}
+@mixin DateSearch{
+	padding: 10px 20px;
+	border: 1px #ccc solid;
+	background-color: $apple;
+	font-size: 14px;
+	margin-left: 5px;
+	color: $white;
+
+&:hover {
+	background-color: $Green;
+	cursor: pointer;
+    }
+}
+
+@mixin Searchingkeyword{
+	margin: 16px 5px;
+	width: 250px; 
+	font-weight: bolder;
+}
+
+@mixin footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: $fullWidth;
+	background-color:$footerColor;
+	color: $white;
+	text-align: center;
+	padding: 14px 16px;
+}
+@mixin loginPage {
+	background:$CostaDelSol;
+	padding: 20px;
+	max-width:600px;
+	margin:40px auto;
+	border-radius:6px;
+	box-shadow:0 4px 10px 4px; 
+	ul{
+	display: flex;
+	position: relative;
+	top:20%;
+	left: 35%;
+	color: $white;
+	list-style: none;
+  }
+}
+@mixin myDropdown{
+    background:$Edward;
+	padding: 5px;
+	margin: 1px;
+} 
+
+
+@mixin DropDownHover{
+	background-color:$Green; 
+	cursor:pointer; 
+}
+
+
+
+  @mixin  iPutProp{
+  	display: block;
+  	width: $fullWidth;
+  	height: 50px;
+  	padding: 0px 10px;
+  	border-radius: 4px;
+  	border: 1px #ccc solid;
+  	margin: 0px 0px 16px 0px;
+  }
+
+
+  @mixin  btnfrm{
+  	width: $fullWidth;
+  	height: 50px;
+  	margin-bottom:50px;
+  	border: none;
+  	border-radius: 4px;
+  	outline: none;
+  	font-family:sans-serif;
+  	font-weight: bold;
+  	font-size: 14px;
+  	color: $white;
+  	background-color:$apple;
+  	cursor: pointer;
+  	&:hover{
+  	font-size: 16px;
+  }
+
+  }
+
+   @mixin dropdownContent {
+  	display: none;
+  	position:relative;
+  	background-color:$Alabaster;
+  	min-width: 91px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+
+  	h3 {
+  	color: $Black;
+  	padding: 4px 4px;
+  	text-decoration: none;
+  	display:block;
+  	cursor:pointer;
+  	background-color: $Solitude;  
+  	&:hover {background-color: $Perano;}
+  }
+
+  }
+@mixin  iPageWelcomeUser{
+  	width:$Fullviewportwidth;
+  	height:$Fullviewportheight;
+  	justify-content: center;
+  	align-items: center;
+  	font-size: 30px;
+  	background-color:$Grandis;
+  }
+
+  @mixin userButton{
+  	width: 150px;
+  	height: 50px;
+  	margin-bottom:10px;
+  	margin-left: 55px;
+  	border: none;
+  	border-radius: 4px;
+  	outline: none;
+  	font-family:sans-serif;
+  	font-weight: bold;
+  	font-size: 14px;
+  	color: white;
+  	background-color: $apple;
+  	cursor: pointer;
+  }
+
+  @mixin evntButton{
+    	width: 200px;
+    	height: 60px;
+    	margin-left: 30px;
+    	margin-bottom:10px;
+    	border: none;
+    	border-radius: 4px;
+    	outline: none;
+    	font-family:sans-serif;
+    	font-weight: bold;
+    	font-size: 14px;
+    	color: white;
+    	background-color: $apple;
+    	cursor: pointer;
+  }
+  @mixin btnLogout{
+  	width: $fullWidth;
+  	height: 50px;
+  	margin-bottom:10px;
+  	border: none;
+  	border-radius: 4px;
+  	outline: none;
+  	font-family:sans-serif;
+  	font-weight: bold;
+  	font-size: 14px;
+  	color: white;
+  	background-color: $apple;
+  	cursor: pointer;
+  }
+
+
+@mixin mybutton {
+  	padding: 10px 20px;
+  	border: 1px #ccc solid;
+  	background-color:$apple;
+  	font-size: 14px;
+  	margin-left: 10px;
+  }
+
+
+ @mixin ALLBUTTON {
+  	width: 150px;
+  	height: 50px;
+  	margin-bottom:2%;
+  	margin-left: 20px;
+  	border: none;
+  	border-radius: 4px;
+  	outline: none;
+  	font-family:sans-serif;
+  	font-weight: bold;
+  	font-size: 14px;
+  	color: white;
+  	background-color:$apple;
+  	cursor: pointer;
+  }
+
+@mixin  Backbutton{
+  	width: 150px;
+  	height: 50px;
+  	border: none;
+  	border-radius: 4px;
+  	outline: none;
+  	font-family:sans-serif;
+  	font-weight: bold;
+  	font-size: 14px;
+  	color: white;
+  	background-color:$apple;
+  	cursor: pointer;
+  }
+
+
+ @mixin backtoPanel{
+  	width: $fullWidth; 
+  	height: 200px;
+  	background-color: $dividerColor;
+  	border: 5px solid teal;
+  }
+
+  @mixin user {
+  	border: 1px #ccc solid;
+  	padding: 10px;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	margin: 0 0 8px 0;
+  }
+
+@mixin ContainerFlex{
+
+  	display: flex;
+  	flex-flow: row wrap;
+  	text-align: center;
+  	align-items: center;
+  	margin-bottom: 47px;
+  	justify-content: center;
+} 
+
+
+ @mixin EvntPageButton{
+  	width: 200px;
+  	height: 50px;
+  	margin-top: 15px;
+  	margin-bottom:100px;
+  	margin-left: 20px;
+  	border: none;
+  	border-radius: 4px;
+  	outline: none;
+  	font-family:sans-serif;
+  	font-weight: bold;
+  	font-size: 14px;
+  	color: $white;
+  	background-color:$apple;
+  	cursor: pointer;
+  }
+
+
+ @mixin Newcontainer{
+	width: 70%; 
+	height:10%; 
+	margin-left: 10%;
+	margin-top: -5%;
+  margin-bottom:8%;
+
+}
+//............modal.........
+
+@mixin entire-modal{
+	
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: $fullWidth;
+		height: $fullheight; 
+		overflow: auto;  
+}
+
+@mixin Mymodal-content{
+		position: relative;
+		background-color: $modalBackground-color;
+		margin: auto;
+		padding: 0;
+	    border: 1px solid $modalbordercolor;
+		width: 25%;
+	}
+	@mixin modal-closeButton{
+			color: $white;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+		@mixin closeButtonHover{
+				color: $CloseButton-color;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			@mixin myModalHeader{
+				
+					padding: 2px 15px;
+					background-color: $ModalHeaderbground-color;
+					color: $white;
+				}
+				@mixin modalBody{
+					padding: 10% 3%;
+				}
+			
+		@mixin myModal-Footer{
+					padding: 2px 16px;
+					background-color: $ModalHeaderbground-color;
+				}
+// ....modal structure end..............
+
+
+//.....inside modal event.......
+
+@mixin Modal-event{
+	text-align: center;
+	justify-content: center;
+	align-items: center; 
+  }
+  @mixin modalEventImage{
+		margin-bottom: 5%;
+		  width: 50%;
+		  height: 35%;
+		}
+//.............inside modal event end...........
+		@mixin btnToJoinEvent{
+				display: block;
+				margin-left: 30%;
+			  }
+		
+// ....partner table.........
+@mixin Eventpartnerlist{ 
+		border: 2px solid;
+		width: 600px;
+		margin-left: 30%;
+}
+@mixin PartnerlistColumn{
+	text-align: center;
+	border: 2px solid;
+	width:200px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

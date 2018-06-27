@@ -1,0 +1,476 @@
+@import "_mixins";
+@import "_vars";	
+
+*{
+	margin: $initialmargin;
+  	padding:$initialPadding;
+  	box-sizing: border-box;
+}
+
+body{
+	@include body;
+}
+
+ /*................Header start...................*/
+  
+.myNav{
+@include myNav;
+  }
+
+
+#SiteTitle{
+     @include SiteTitle;
+}
+
+
+#logo-title{
+  display: inline-flex;
+}
+/*................Header End..................*/
+
+
+  /* Image container start  */
+
+  .con {
+  	@include con;
+  }
+  /* Image container end */
+
+#divider{
+	@include divider;
+}
+
+#magicBtn{
+	float: right;
+  margin-left: 5%;
+}
+
+
+.iputDivider{
+	@include iputDivider;
+}
+
+
+#articleByDate{
+	@include articleByDate;
+}
+
+#Period{
+	display: inline-flex;
+}
+
+#DateSearch{
+	@include DateSearch;
+}
+
+#Searchingkeyword{
+	@include Searchingkeyword;
+}
+/*................footer start..................*/
+.footer {
+	@include footer;
+}
+/*................footer End..................*/
+.loginPage {
+	@include loginPage;
+}
+
+li{
+	cursor:pointer;
+	&:hover {
+		background:$MountainMeadow;
+		color:$white;
+	}
+}
+
+.dropdown{
+	@include myDropdown;
+}
+
+.ShowPage{
+	h2{
+	@include myDropdown;
+	}
+}
+
+.dropdown{
+	h2 {
+&:hover{
+@include DropDownHover;
+      }
+
+	} 
+}
+
+.ShowPage{
+	h2 {
+&:hover{
+@include DropDownHover;
+      }
+
+	} 
+}
+
+/*.....................now login-form & signup form design .......................*/
+
+h1{
+	text-align: center;
+}
+
+  .iPutProp{
+  	@include iPutProp;
+  }
+
+  .btnfrm{
+  	@include btnfrm;
+  }
+
+  button{
+  	&:hover {
+  	background-color:$Green;
+  	cursor: pointer;
+    }
+  }
+
+  .SignUp{
+  	margin-top: 15px;
+  	font-weight: bold;
+  }
+  .LogIn{
+  	@extend .SignUp;
+  }
+  .page{
+  	margin-top:7%;
+  }
+#Form-SignUp{
+  	display: none;
+  }
+#Form-LogIn-Admin{
+  	@extend #Form-SignUp;
+  }
+
+/*............drop down list.................*/
+
+
+   .dropdown-content {
+  	@include  dropdownContent;
+  }
+
+// .....dropdown:hover .dropdown-content.... missing here.....
+ .dropdown {
+ 	&:hover 
+ 	   {
+ 	  .dropdown-content 
+ 		{
+  	display: block;
+       }
+}
+  }
+
+/*.....................Admin-login style.....................*/
+
+  #iPageLogin{
+  	text-align: center;
+  	display: none;
+  }
+
+#lblLoginError{
+  	@extend #iPageLogin;
+  }
+
+   #iPageWelcomeUser{
+   	@include iPageWelcomeUser;
+  }
+ #iPageWelcome{
+ 	@extend #iPageWelcomeUser;
+  }
+
+  .cPage{
+  	overflow: hidden;
+  	display: none;
+  	.show{
+  	display: grid;
+  }
+  }
+
+// ...............Admin div ........
+
+.userButton{
+  	@include userButton;
+  }
+
+  .evntButton{
+    	@include evntButton;
+    	&:hover{
+    		font-size: 15px;
+    	}
+  }
+  .btnLogout{
+  	@include btnLogout;
+  }
+
+/* ........show all users................*/
+
+.DisplayUsers{
+  	display: none;
+  }
+
+  .show-all-users{
+  	height: 50vh;
+  	overflow-x: hidden;
+  	overflow-y: scroll;
+  }
+
+.show-single-user {
+  	@extend .show-all-users;
+
+  	border: 1px #ccc solid;
+  	border-width: 1px 0 0 0;
+  	margin: 0 -10px;
+  	padding: 0 10px 40px 10px;
+  	img{
+  		max-width: 160px;
+  	   border-radius: 3px;
+
+  	}
+ 
+  }
+
+  .user-details{
+  	text-align: center;
+  }
+
+  h1 {
+  	padding: 10px 0 0 0;
+  	margin: 0 0 32px 0;
+  	
+  	button {
+  	margin-left: 20px;
+    }
+
+  }
+
+  #updateInfo{
+  	display: none;
+  }
+
+  button {
+  	@include mybutton;
+  }
+
+ .btnseeDetails{
+  @include ALLBUTTON;
+  }
+.BtnDelUser {
+  @extend .btnseeDetails;
+  }
+
+.BtnAddinguser {
+  	@extend .btnseeDetails;
+  }
+.GoToShowUsers {
+  	@extend .btnseeDetails;
+  }
+
+.BtnBack{
+  @include	Backbutton;
+  }
+
+
+  .backtoPanel{
+  	@include backtoPanel;
+  	
+  }
+
+  .user {
+  	@include user;
+  	button {
+  	font-size: 16px;
+  }
+  }
+
+
+  .user  {
+  	.name{
+  	font-weight: 700;
+  	font-size: 18px;
+  	margin-left: 10px;
+  }
+  	
+  }
+  /*........................Event pages.............*/
+
+
+.DisplayAddEvnt{
+  	display: none;
+  }
+.DisplayEvnts{
+  	@extend .DisplayAddEvnt;
+  	h2{
+  	text-align: center; 
+    font-style: italic;
+  	}
+  }
+ .EvntsView{
+  	width: $fullWidth;
+  	float:left;
+  	height: auto;
+  }
+
+  #updateEventInfo{
+  	display: none;
+  	position: relative; 
+  }
+
+  #btnEditEventInfo{
+  	margin-bottom: 200px;
+  }
+
+.sEvnt{
+  	margin: 1%;
+
+   img{
+  	margin-top: 4px;
+  	margin-bottom: 5px;
+  	width: 300px;
+  	height: 270px;
+  }
+
+  h3{
+  	margin-top: 20px;
+  }
+ h4{
+  	color:$Maroon;
+  }
+  }
+
+  .DisplayPartnerList{
+  	display: none;
+  }
+
+  .PartnerList{
+  	margin-top: 2%;
+  	text-align: center;
+  }
+
+.flex-container{
+@include ContainerFlex;
+  }
+
+  .BtnEditEvnt{
+  	width: 50%;
+  	height: 50px;
+  	margin-top: 10px;
+  }
+.BtnDelevent{
+	@extend .BtnEditEvnt;
+  }
+
+
+  .BtnBack{
+  	@include EvntPageButton;
+  }
+
+.EventAddBtn{
+  	@extend .BtnBack;
+  }
+
+  .EventViewBtn{
+  	@extend .BtnBack;
+  }
+ 
+/*................................Event Join Page.................*/
+ 
+#iPageShowEvnt{
+	display: none;
+	overflow: hidden;
+}
+
+/*........graph..............*/
+#iPageShowGraph{
+	display: none;
+}
+#container{
+	@include Newcontainer;
+}
+#userManagement{ margin-left: 20%; }
+
+/* .....Modal start........ */
+.modal{
+	@include entire-modal;
+}
+
+.modal-content {
+	@include Mymodal-content;
+}
+.close {
+	@include modal-closeButton;
+}
+
+.close:hover{
+	@include closeButtonHover;
+}
+
+.modal-header {
+	@include myModalHeader;
+}
+.modal-body {
+	@include modalBody;
+}
+.modal-footer {
+	@include myModal-Footer;
+	
+}
+/* ....modal structure end..............*/
+.evntImg:hover {
+	cursor: pointer;
+ }
+
+/*.....inside modal event.......*/
+#modalEventHere{
+	@include Modal-event;
+}
+
+#modalEventHere img{
+	@include modalEventImage;
+}
+/* .........inside modal event end...........*/
+.btnTojointEvent{
+	@include btnToJoinEvent;
+}
+/*.....partner table.........*/
+.PartnerList{ 
+	@include Eventpartnerlist;
+}
+.PartnerList td{
+	@include PartnerlistColumn;
+}
+/* ...........stakeholder event........*/
+#Form-LogIn-Stakeholder{
+	display: none;
+}
+#iPageAddStakeholderEvnt{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,529 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #c1bdba; }
+
+/*................Header start...................*/
+.myNav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333333; }
+  .myNav li {
+    float: right; }
+    .myNav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; }
+      .myNav li a:hover {
+        background-color: green; }
+
+#SiteTitle {
+  color: white;
+  margin-left: 10%;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 5%; }
+  #SiteTitle:hover {
+    transform: scale(1.3); }
+
+#logo-title {
+  display: inline-flex; }
+
+/*................Header End..................*/
+/* Image container start  */
+.con {
+  width: 100%;
+  height: 300px;
+  border: 1px solid gray;
+  margin: auto;
+  position: relative; }
+
+/* Image container end */
+#divider {
+  width: 100%;
+  background-color: #aab;
+  border: 2px solid teal;
+  height: auto; }
+
+#magicBtn {
+  float: right;
+  margin-left: 5%; }
+
+.iputDivider {
+  display: block;
+  width: auto;
+  height: 50px;
+  padding: 0px 10px;
+  border-radius: 4px;
+  border: 1px #ccc solid;
+  margin: 0px 0px 16px 0px; }
+
+#articleByDate {
+  float: right;
+  text-align: center;
+  margin-right: 20%; }
+
+#Period {
+  display: inline-flex; }
+
+#DateSearch {
+  padding: 10px 20px;
+  border: 1px #ccc solid;
+  background-color: #43A047;
+  font-size: 14px;
+  margin-left: 5px;
+  color: white; }
+  #DateSearch:hover {
+    background-color: green;
+    cursor: pointer; }
+
+#Searchingkeyword {
+  margin: 16px 5px;
+  width: 250px;
+  font-weight: bolder; }
+
+/*................footer start..................*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; }
+
+/*................footer End..................*/
+.loginPage {
+  background: #666633;
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px 4px; }
+  .loginPage ul {
+    display: flex;
+    position: relative;
+    top: 20%;
+    left: 35%;
+    color: white;
+    list-style: none; }
+
+li {
+  cursor: pointer; }
+  li:hover {
+    background: #1ab188;
+    color: white; }
+
+.dropdown {
+  background: #a0b3b0;
+  padding: 5px;
+  margin: 1px; }
+
+.ShowPage h2 {
+  background: #a0b3b0;
+  padding: 5px;
+  margin: 1px; }
+
+.dropdown h2:hover {
+  background-color: green;
+  cursor: pointer; }
+
+.ShowPage h2:hover {
+  background-color: green;
+  cursor: pointer; }
+
+/*.....................now login-form & signup form design .......................*/
+h1 {
+  text-align: center; }
+
+.iPutProp {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0px 10px;
+  border-radius: 4px;
+  border: 1px #ccc solid;
+  margin: 0px 0px 16px 0px; }
+
+.btnfrm {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #43A047;
+  cursor: pointer; }
+  .btnfrm:hover {
+    font-size: 16px; }
+
+button:hover {
+  background-color: green;
+  cursor: pointer; }
+
+.SignUp, .LogIn {
+  margin-top: 15px;
+  font-weight: bold; }
+
+.page {
+  margin-top: 7%; }
+
+#Form-SignUp, #Form-LogIn-Admin {
+  display: none; }
+
+/*............drop down list.................*/
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 91px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+  .dropdown-content h3 {
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    background-color: #e6f2ff; }
+    .dropdown-content h3:hover {
+      background-color: #a1c1f1; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/*.....................Admin-login style.....................*/
+#iPageLogin, #lblLoginError {
+  text-align: center;
+  display: none; }
+
+#iPageWelcomeUser, #iPageWelcome {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: #FFCF79; }
+
+.cPage {
+  overflow: hidden;
+  display: none; }
+  .cPage .show {
+    display: grid; }
+
+.userButton {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-left: 55px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #43A047;
+  cursor: pointer; }
+
+.evntButton {
+  width: 200px;
+  height: 60px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #43A047;
+  cursor: pointer; }
+  .evntButton:hover {
+    font-size: 15px; }
+
+.btnLogout {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #43A047;
+  cursor: pointer; }
+
+/* ........show all users................*/
+.DisplayUsers {
+  display: none; }
+
+.show-all-users, .show-single-user {
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.show-single-user {
+  border: 1px #ccc solid;
+  border-width: 1px 0 0 0;
+  margin: 0 -10px;
+  padding: 0 10px 40px 10px; }
+  .show-single-user img {
+    max-width: 160px;
+    border-radius: 3px; }
+
+.user-details {
+  text-align: center; }
+
+h1 {
+  padding: 10px 0 0 0;
+  margin: 0 0 32px 0; }
+  h1 button {
+    margin-left: 20px; }
+
+#updateInfo {
+  display: none; }
+
+button {
+  padding: 10px 20px;
+  border: 1px #ccc solid;
+  background-color: #43A047;
+  font-size: 14px;
+  margin-left: 10px; }
+
+.btnseeDetails, .BtnDelUser, .BtnAddinguser, .GoToShowUsers {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 2%;
+  margin-left: 20px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #43A047;
+  cursor: pointer; }
+
+.BtnBack, .EventAddBtn, .EventViewBtn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #43A047;
+  cursor: pointer; }
+
+.backtoPanel {
+  width: 100%;
+  height: 200px;
+  background-color: #aab;
+  border: 5px solid teal; }
+
+.user {
+  border: 1px #ccc solid;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 8px 0; }
+  .user button {
+    font-size: 16px; }
+
+.user .name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 10px; }
+
+/*........................Event pages.............*/
+.DisplayAddEvnt, .DisplayEvnts {
+  display: none; }
+
+.DisplayEvnts h2 {
+  text-align: center;
+  font-style: italic; }
+
+.EvntsView {
+  width: 100%;
+  float: left;
+  height: auto; }
+
+#updateEventInfo {
+  display: none;
+  position: relative; }
+
+#btnEditEventInfo {
+  margin-bottom: 200px; }
+
+.sEvnt {
+  margin: 1%; }
+  .sEvnt img {
+    margin-top: 4px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 270px; }
+  .sEvnt h3 {
+    margin-top: 20px; }
+  .sEvnt h4 {
+    color: #800000; }
+
+.DisplayPartnerList {
+  display: none; }
+
+.PartnerList {
+  margin-top: 2%;
+  text-align: center; }
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 47px;
+  justify-content: center; }
+
+.BtnEditEvnt, .BtnDelevent {
+  width: 50%;
+  height: 50px;
+  margin-top: 10px; }
+
+.BtnBack, .EventAddBtn, .EventViewBtn {
+  width: 200px;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #43A047;
+  cursor: pointer; }
+
+/*................................Event Join Page.................*/
+#iPageShowEvnt {
+  display: none;
+  overflow: hidden; }
+
+/*........graph..............*/
+#iPageShowGraph {
+  display: none; }
+
+#container {
+  width: 70%;
+  height: 10%;
+  margin-left: 10%;
+  margin-top: -5%;
+  margin-bottom: 8%; }
+
+#userManagement {
+  margin-left: 20%; }
+
+/* .....Modal start........ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 25%; }
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover {
+  color: red;
+  text-decoration: none;
+  cursor: pointer; }
+
+.modal-header {
+  padding: 2px 15px;
+  background-color: #5cb85c;
+  color: white; }
+
+.modal-body {
+  padding: 10% 3%; }
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c; }
+
+/* ....modal structure end..............*/
+.evntImg:hover {
+  cursor: pointer; }
+
+/*.....inside modal event.......*/
+#modalEventHere {
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
+#modalEventHere img {
+  margin-bottom: 5%;
+  width: 50%;
+  height: 35%; }
+
+/* .........inside modal event end...........*/
+.btnTojointEvent {
+  display: block;
+  margin-left: 30%; }
+
+/*.....partner table.........*/
+.PartnerList {
+  border: 2px solid;
+  width: 600px;
+  margin-left: 30%; }
+
+.PartnerList td {
+  text-align: center;
+  border: 2px solid;
+  width: 200px; }
+
+/* ...........stakeholder event........*/
+#Form-LogIn-Stakeholder {
+  display: none; }
+
+#iPageAddStakeholderEvnt {
+  display: none; }
+
+/*# sourceMappingURL=merge-style.css.map */
